@@ -27,7 +27,7 @@ output "node_group_arn" {
 
 output "private_subnet_ids" {
   description = "list of subnet ids"
-  value       = var.subnet_ids
+  value       = var.private_subnet_ids
 }
 
 #output "availibility_zones" {
