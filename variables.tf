@@ -10,22 +10,22 @@ variable "node_group_name" {
   type        = string
 }
 
-variable "node_role_arn" {
-  description = "IAM role for the node group"
-  type        = string
-}
+#variable "node_role_arn" {
+#  description = "IAM role for the node group"
+#  type        = string
+#}
 
-variable "vpc_cidr" {
-  description = "vpc ip cidr block"
-  type        = string
-}
+#variable "vpc_cidr" {
+#  description = "vpc ip cidr block"
+#  type        = string
+#}
 
-variable "azs" {
-  description = "availibility zones"
-  type        = list(string)
-}
+#variable "azs" {
+#  description = "availibility zones"
+#  type        = list(string)
+#}
 
-variable "subnet_ids" {
+variable "private_subnet_ids" {
   description = "Id of subnets"
   type        = list(string)
 }
