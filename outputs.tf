@@ -20,25 +20,25 @@ output "node_group_arn" {
   value       = aws_eks_node_group.this.arn
 }
 
-output "vpc_cidr" {
-  description = "vpc ip cidr"
-  value       = var.vpc_cidr
-}
+#output "vpc_cidr" {
+ # description = "vpc ip cidr"
+ # value       = var.vpc_cidr
+#}
 
-output "subnet_ids" {
+output "private_subnet_ids" {
   description = "list of subnet ids"
   value       = var.subnet_ids
 }
 
-output "availibility_zones" {
-  description = "list of azs"
-  value       = var.azs
-}
+#output "availibility_zones" {
+ # description = "list of azs"
+ # value       = var.azs
+#}
 
-output "attach_primary_sg" {
-  description = "primary sg for eks endpoints"
-  value       = var.attach_primary_sg
-}
+#output "attach_primary_sg" {
+ # description = "primary sg for eks endpoints"
+  #value       = var.attach_primary_sg
+#}
 
 output "cluster_version" {
   description = "Version of cluster"
