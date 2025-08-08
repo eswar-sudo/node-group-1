@@ -70,11 +70,11 @@ variable "labels" {
   type        = map(string)
 }
 
-variable "attach_primary_sg" {
-  description = "primary sg for eks endpoints"
-  type        = string
-  default     = "sg-093ed767662193185"
-}
+#variable "attach_primary_sg" {
+ # description = "primary sg for eks endpoints"
+ # type        = string
+ # default     = "sg-093ed767662193185"
+#}
 
 variable "cluster_version" {
   description = "version of the cluster"
